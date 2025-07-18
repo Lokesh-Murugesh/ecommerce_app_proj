@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  nextjs-app:
+    build: .
+    container_name: ecommerce-nextjs
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules # Exclude node_modules from host bind mount
+      - /app/.next # Exclude .next from host bind mount
+    env_file:
+      - ./.env.local
+    # Uncomment the following lines if you need to provide the Firebase Admin SDK JSON file directly to the container
+    # volumes:
+    #   - ./small-shop-ecommerce-firebase-adminsdk-fbsvc-aeb7d43f71.json:/app/small-shop-ecommerce-firebase-adminsdk-fbsvc-aeb7d43f71.json
+    restart: always 
