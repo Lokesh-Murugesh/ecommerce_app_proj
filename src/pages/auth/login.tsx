@@ -162,13 +162,6 @@ export default function SignIn() {
                                 </div>
 
                                 <div className="flex items-center justify-center">
-                                    <button
-                                        type="button"
-                                        onClick={() => setUseMagicLink(!useMagicLink)}
-                                        className="text-sm text-blue-500 hover:text-blue-400"
-                                    >
-                                        {useMagicLink ? "Use password to sign in" : "Sign in with magic link instead"}
-                                    </button>
                                 </div>
                             </form>
                         )}

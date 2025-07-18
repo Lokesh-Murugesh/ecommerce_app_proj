@@ -146,7 +146,7 @@ export default function Register() {
             <div className="relative hidden w-0 flex-1 lg:block">
                 <Image
                     className="absolute inset-0 h-full w-full object-cover"
-                    src="/ion.png"
+                    src="https://images.unsplash.com/photo-1605106702734-205df224ecce?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     layout="fill"
                     alt=""
                 />
