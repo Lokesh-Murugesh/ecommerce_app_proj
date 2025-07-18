@@ -5,10 +5,10 @@ FROM node:20-alpine
 WORKDIR /app
 
 # Copy only package files first (for efficient caching)
-COPY package.json package-lock.json ./
+COPY package.json ./
 
 # Install dependencies
-RUN npm install --frozen-lockfile
+RUN npm install
 
 # Copy the rest of your application code
 COPY . .

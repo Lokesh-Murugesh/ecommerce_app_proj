@@ -101,6 +101,7 @@ export default function Register() {
                                         className="block w-full rounded-md border-0 py-1.5 px-3 bg-neutral-800 text-neutral-200 shadow-sm ring-1 ring-inset ring-neutral-700 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6"
                                         placeholder="Create a password"
                                     />
+            <p className="mt-1 text-xs text-neutral-400">Password must be at least 8 characters and include a special character.</p>
                                 </div>
                             </div>
 
